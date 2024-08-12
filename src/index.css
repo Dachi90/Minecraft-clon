@@ -49,3 +49,9 @@ body {
 .texture-selector img.selected {
 	border-color: red;
 }
+
+.menu {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
