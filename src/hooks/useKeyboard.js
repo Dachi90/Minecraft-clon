@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const ACTION_KEYBOARD_MAP = {
-	KeyW: 'moveFoward',
+	KeyW: 'moveForward',
 	KeyS: 'moveBackward',
 	KeyA: 'moveLeft',
 	KeyD: 'moveRight',

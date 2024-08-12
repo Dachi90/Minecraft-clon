@@ -4,18 +4,23 @@ import { Physics } from '@react-three/cannon';
 import { Ground } from './components/Ground';
 import { FPV as Fpv } from './components/FPV';
 import { Player } from './components/Player';
+import { Cubes } from './components/Cubes';
 
 function App() {
 	return (
-		<Canvas>
-			<Sky sunPosition={(100, 100, 20)} />
-			<ambientLight />
-			<Fpv />
-			<Physics>
-				<Player />
-				<Ground />
-			</Physics>
-		</Canvas>
+		<>
+			<Canvas>
+				<Sky sunPosition={(100, 100, 20)} />
+				<ambientLight />
+				<Fpv />
+				<Physics>
+					<Cubes />
+					<Player />
+					<Ground />
+				</Physics>
+			</Canvas>
+			<div className='pointer'>+</div>
+		</>
 	);
 }
 
